@@ -1,0 +1,9 @@
+{
+  "version": "V6 FINAL BOSS",
+  "architecture": "V4 + DistilBERT meta-learning",
+  "training_samples": 50000,
+  "distilbert_dims": 100,
+  "meta_features": 102,
+  "device": "cpu",
+  "batch_size": 16
+}

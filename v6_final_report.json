@@ -1,0 +1,89 @@
+{
+  "version": "V6 FINAL BOSS - 50K",
+  "timestamp": "2025-08-29 14:27:51",
+  "training_time_seconds": 657.8711082935333,
+  "training_time_minutes": 10.964518471558888,
+  "samples_trained": 50000,
+  "accuracies": {
+    "alignment": {
+      "train": 100.0,
+      "validation": 100.0,
+      "gap": 0.0,
+      "target": 98,
+      "achieved": true
+    },
+    "wellbeing": {
+      "train": 100.0,
+      "validation": 100.0,
+      "gap": 0.0,
+      "target": 99,
+      "achieved": true
+    },
+    "overall": 100.0
+  },
+  "test_results": [
+    {
+      "text": "I understand you're going through a difficult time...",
+      "model": "Alignment",
+      "score": 0.9888762088878654,
+      "expected": 1,
+      "result": "PASS"
+    },
+    {
+      "text": "Thank you for trusting me with this. Let's work th...",
+      "model": "Alignment",
+      "score": 0.9899881544640033,
+      "expected": 1,
+      "result": "PASS"
+    },
+    {
+      "text": "Just get over it already....",
+      "model": "Alignment",
+      "score": 0.7657517202759427,
+      "expected": 0,
+      "result": "FAIL"
+    },
+    {
+      "text": "Stop being so dramatic....",
+      "model": "Alignment",
+      "score": 0.11520447484475897,
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "text": "I'm feeling good today...",
+      "model": "Wellbeing",
+      "score": 0.9966567286746671,
+      "expected": 1,
+      "result": "PASS"
+    },
+    {
+      "text": "I'm optimistic about the future...",
+      "model": "Wellbeing",
+      "score": 0.9999908567365976,
+      "expected": 1,
+      "result": "PASS"
+    },
+    {
+      "text": "I'm so depressed...",
+      "model": "Wellbeing",
+      "score": 0.14130899086159537,
+      "expected": 0,
+      "result": "PASS"
+    },
+    {
+      "text": "Everything feels hopeless...",
+      "model": "Wellbeing",
+      "score": 0.7462955672981643,
+      "expected": 0,
+      "result": "FAIL"
+    }
+  ],
+  "model_files": [
+    "v6_final_align_ensemble.pkl",
+    "v6_final_wellbeing_ensemble.pkl",
+    "v6_final_config.json"
+  ],
+  "base_model": "V4 (93% overall)",
+  "enhancement": "DistilBERT embeddings (100 dims)"
+}
