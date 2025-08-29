@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+edgefedalign_env/
+venv/
+ENV/
+env/
+.venv
+
+# PyTorch
+*.pt
+*.pth
+edge_model.pt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Logs
+*.log
+logs/
+
+# Local config
+.env
+config.local.py
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Documentation
+docs/_build/
+site/
+
+# Streamlit
+.streamlit/
+
+# Federated Learning
+fl_simulation/
+client_states/
+
+# Model files
+models/
+checkpoints/
+*.ckpt
+
+# Data files
+data/
+*.csv
+*.json
+*.db
+*.sqlite

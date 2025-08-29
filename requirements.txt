@@ -1,0 +1,15 @@
+flwr
+langchain
+langgraph
+torch
+scikit-learn
+nltk
+vaderSentiment
+streamlit
+requests
+cryptography
+matplotlib
+pytest
+tensorflow
+kivy
+beeware
