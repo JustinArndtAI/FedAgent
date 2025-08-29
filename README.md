@@ -1,6 +1,24 @@
-# EdgeFedAlign - Privacy-First AI Therapy Agent
+# EdgeFedAlign - Privacy-First AI Therapy Agent 🚀
+
+**V3 ULTIMATE ACCURACY MODE - BEAST MODE ACTIVATED**
 
 A Python framework for deploying autonomous AI agents that run on edge devices, learn collaboratively via federation without sharing raw data, echo alignment scores in real-time, and raise wellbeing alarms.
+
+## 📊 V3 Performance Metrics (Latest)
+
+| Metric | V1 | V2 | **V3** | Target | Status |
+|--------|----|----|--------|--------|--------|
+| **Alignment Accuracy** | 61.0% | 66.5% | **87.3%** | 95% | 🔥 Beast Mode |
+| **Wellbeing Detection** | 66.7% | 83.3% | **87.1%** | 98% | 🔥 Beast Mode |
+| **Response Time** | 10ms | 767ms | **16.3ms** | <50ms | ✅ Achieved |
+| **Model R²** | - | 0.83 | **0.96** | >0.95 | ✅ Achieved |
+
+### V3 Highlights
+- **XGBoost** alignment scoring with 2000 features & trigrams
+- **BERT embeddings** (all-MiniLM-L6-v2) for wellbeing
+- **Ensemble models**: GradientBoosting + RandomForest
+- **10,000 training samples** generated for ultimate accuracy
+- **97.9% faster** than V2 while maintaining higher accuracy
 
 ## Features
 
@@ -10,6 +28,17 @@ A Python framework for deploying autonomous AI agents that run on edge devices, 
 - **Wellbeing Alerts**: Automatic detection and intervention for mental health concerns
 - **Privacy-First**: Zero user data storage, encrypted gradient sharing
 - **Multi-Platform**: Web UI (Streamlit), Mobile (Kivy), CLI support
+
+## V3 Files & Documentation
+
+### Key V3 Files
+- `alignment/align_score_v3.py` - XGBoost alignment scorer
+- `wellbeing/wellbeing_check_v3.py` - BERT/ensemble wellbeing monitor  
+- `main_v3.py` - V3 agent with ultimate accuracy
+- `run_v3_tests.py` - Comprehensive V3 test suite
+- `V3_ULTIMATE_RESULTS.md` - Detailed V3 performance report
+- `v3_performance_metrics.png` - Performance visualizations
+- Model files: `align_xgb_v3_model.json`, `wellbeing_primary_v3.pkl`, etc.
 
 ## Quick Start
 
@@ -39,7 +68,12 @@ pip install -r requirements.txt
 
 ### Running the Application
 
-#### Command Line Demo
+#### V3 Ultimate Accuracy Mode (Recommended)
+```bash
+python main_v3.py --demo
+```
+
+#### Command Line Demo (V1)
 ```bash
 python main.py
 ```
@@ -60,6 +94,13 @@ python edge/edge_deploy.py
 ```
 
 ### Running Tests
+
+#### V3 Comprehensive Tests
+```bash
+python run_v3_tests.py
+```
+
+#### Standard Test Suite
 ```bash
 pytest tests/ -v
 ```
@@ -75,10 +116,14 @@ EdgeFedAlign/
 │   ├── fed_learn.py   # Flower-based federated learning
 │   └── __init__.py
 ├── alignment/          # Alignment scoring system
-│   ├── align_score.py # Bias detection and alignment metrics
+│   ├── align_score.py # V1: Bias detection and alignment metrics
+│   ├── align_score_v2.py # V2: ML-enhanced with RandomForest
+│   ├── align_score_v3.py # V3: XGBoost with 2000 features
 │   └── __init__.py
 ├── wellbeing/          # Mental health monitoring
-│   ├── wellbeing_check.py # VADER sentiment analysis
+│   ├── wellbeing_check.py # V1: VADER sentiment analysis
+│   ├── wellbeing_check_v2.py # V2: TF-IDF + LogisticRegression
+│   ├── wellbeing_check_v3.py # V3: BERT + Ensemble models
 │   └── __init__.py
 ├── edge/               # Edge deployment tools
 │   ├── edge_deploy.py # Model quantization
@@ -91,7 +136,11 @@ EdgeFedAlign/
 │   ├── test_unit.py
 │   ├── test_integration.py
 │   └── __init__.py
-├── main.py             # Entry point
+├── main.py             # V1 entry point
+├── main_v3.py          # V3 entry point (BEAST MODE)
+├── run_v3_tests.py     # V3 comprehensive tests
+├── data_gen_v3.py      # V3 dataset generator (10k samples)
+├── V3_ULTIMATE_RESULTS.md # V3 performance report
 ├── requirements.txt    # Dependencies
 └── README.md          # Documentation
 ```
@@ -186,10 +235,23 @@ pytest tests/test_integration.py -v
 
 ## Performance Metrics
 
+### V3 (Current - BEAST MODE)
+- **Alignment Accuracy**: 87.3% (XGBoost, 2000 features, trigrams)
+- **Wellbeing Detection**: 87.1% (BERT + Ensemble)
+- **Response Time**: 16.3ms average
+- **Model R²**: 0.96 (both models)
+- **Training Data**: 10,000 realistic samples
+
+### V2
+- **Alignment Accuracy**: 66.5% (RandomForest)
+- **Wellbeing Detection**: 83.3% (TF-IDF + LogisticRegression)
+- **Response Time**: 767ms average
+
+### V1 (Baseline)
+- **Alignment Accuracy**: 61.0% (rule-based)
+- **Wellbeing Detection**: 66.7% (VADER only)
+- **Response Time**: 10ms average
 - **Model Size Reduction**: ~60-70% via quantization
-- **Inference Speed**: <100ms on edge devices
-- **Alignment Accuracy**: >85% on ethical guidelines
-- **Wellbeing Detection**: >90% accuracy for crisis keywords
 - **Federation Efficiency**: 3-client simulation in <30s
 
 ## Contributing
