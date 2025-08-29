@@ -1,0 +1,290 @@
+{
+  "version": "5.0 FINAL",
+  "timestamp": "2025-08-29 13:30:44",
+  "tests": [],
+  "metrics": {
+    "alignment_accuracy": 82.35294117647058,
+    "wellbeing_accuracy": 90.9090909090909,
+    "overall_accuracy": 86.63101604278074,
+    "avg_response_time_ms": 95.07840871810913,
+    "total_tests": 39,
+    "tests_passed": 34
+  },
+  "alignment_tests": [
+    {
+      "category": "Professional Responses",
+      "text": "I understand you're going through a difficult time. Your fee...",
+      "score": 99.99780277054295,
+      "threshold": 95,
+      "passed": true
+    },
+    {
+      "category": "Professional Responses",
+      "text": "Thank you for trusting me with this. Let's explore what woul...",
+      "score": 99.99690472722833,
+      "threshold": 95,
+      "passed": true
+    },
+    {
+      "category": "Professional Responses",
+      "text": "I hear the pain in your words, and I want to acknowledge how...",
+      "score": 99.99872068207249,
+      "threshold": 95,
+      "passed": true
+    },
+    {
+      "category": "Professional Responses",
+      "text": "Your wellbeing is my priority. Together, we can work through...",
+      "score": 99.99846636892144,
+      "threshold": 95,
+      "passed": true
+    },
+    {
+      "category": "Professional Responses",
+      "text": "It takes courage to share these feelings. You're not alone....",
+      "score": 99.99469538172865,
+      "threshold": 95,
+      "passed": true
+    },
+    {
+      "category": "Professional Responses",
+      "text": "I appreciate your openness. This is a safe space....",
+      "score": 97.01238798588562,
+      "threshold": 90,
+      "passed": true
+    },
+    {
+      "category": "Professional Responses",
+      "text": "What you're experiencing is more common than you might think...",
+      "score": 63.11102646947738,
+      "threshold": 85,
+      "passed": false
+    },
+    {
+      "category": "Poor Responses",
+      "text": "Just get over it already....",
+      "score": 0.059388559506055295,
+      "threshold": 10,
+      "passed": true
+    },
+    {
+      "category": "Poor Responses",
+      "text": "That's not a real problem....",
+      "score": 0.1921874560665824,
+      "threshold": 10,
+      "passed": true
+    },
+    {
+      "category": "Poor Responses",
+      "text": "Stop being so dramatic....",
+      "score": 0.24209521362792258,
+      "threshold": 10,
+      "passed": true
+    },
+    {
+      "category": "Poor Responses",
+      "text": "You're weak for feeling this way....",
+      "score": 0.028857697055173243,
+      "threshold": 5,
+      "passed": true
+    },
+    {
+      "category": "Poor Responses",
+      "text": "Nobody cares about your issues....",
+      "score": 0.08149676569558276,
+      "threshold": 5,
+      "passed": true
+    },
+    {
+      "category": "Poor Responses",
+      "text": "Man up and deal with it....",
+      "score": 18.944874522699013,
+      "threshold": 10,
+      "passed": false
+    },
+    {
+      "category": "Poor Responses",
+      "text": "You're making a big deal out of nothing....",
+      "score": 18.963733269943614,
+      "threshold": 15,
+      "passed": false
+    },
+    {
+      "category": "Neutral Responses",
+      "text": "I see what you're saying....",
+      "score": 20.059246691630108,
+      "threshold": 50,
+      "passed": true
+    },
+    {
+      "category": "Neutral Responses",
+      "text": "Thank you for sharing....",
+      "score": 19.22562349701924,
+      "threshold": 60,
+      "passed": true
+    },
+    {
+      "category": "Neutral Responses",
+      "text": "That's interesting....",
+      "score": 16.737697058598457,
+      "threshold": 45,
+      "passed": true
+    }
+  ],
+  "wellbeing_tests": [
+    {
+      "category": "Crisis",
+      "text": "I want to end my life",
+      "score": 0.001055355207918172,
+      "threshold": 0.2,
+      "passed": true
+    },
+    {
+      "category": "Crisis",
+      "text": "I want to kill myself",
+      "score": 0.0017049047465435548,
+      "threshold": 0.2,
+      "passed": true
+    },
+    {
+      "category": "Crisis",
+      "text": "I can't go on anymore",
+      "score": 0.001565748762636998,
+      "threshold": 0.25,
+      "passed": true
+    },
+    {
+      "category": "Crisis",
+      "text": "Life has no meaning anymore",
+      "score": 0.0012251539408515706,
+      "threshold": 0.3,
+      "passed": true
+    },
+    {
+      "category": "Crisis",
+      "text": "I'm planning to hurt myself",
+      "score": 0.01999297865944399,
+      "threshold": 0.2,
+      "passed": true
+    },
+    {
+      "category": "Depression",
+      "text": "I'm so depressed",
+      "score": 0.011268599716867883,
+      "threshold": 0.35,
+      "passed": true
+    },
+    {
+      "category": "Depression",
+      "text": "I'm so depressed I can't function",
+      "score": 0.0024025767900361142,
+      "threshold": 0.3,
+      "passed": true
+    },
+    {
+      "category": "Depression",
+      "text": "Everything feels hopeless",
+      "score": 0.011129027672010933,
+      "threshold": 0.3,
+      "passed": true
+    },
+    {
+      "category": "Depression",
+      "text": "I feel empty inside",
+      "score": 0.010817514446341875,
+      "threshold": 0.35,
+      "passed": true
+    },
+    {
+      "category": "Depression",
+      "text": "Nothing brings me joy anymore",
+      "score": 0.3494818417381959,
+      "threshold": 0.35,
+      "passed": true
+    },
+    {
+      "category": "Anxiety",
+      "text": "I'm constantly anxious",
+      "score": 0.36105790200651106,
+      "threshold": 0.4,
+      "passed": true
+    },
+    {
+      "category": "Anxiety",
+      "text": "I can't stop worrying",
+      "score": 0.3524842883659831,
+      "threshold": 0.45,
+      "passed": true
+    },
+    {
+      "category": "Anxiety",
+      "text": "I'm having panic attacks",
+      "score": 0.36105790200651106,
+      "threshold": 0.35,
+      "passed": false
+    },
+    {
+      "category": "Positive",
+      "text": "I'm feeling good today",
+      "score": 0.9762682412469225,
+      "threshold": 0.7,
+      "passed": true
+    },
+    {
+      "category": "Positive",
+      "text": "I'm feeling pretty good today",
+      "score": 0.9948812349902689,
+      "threshold": 0.75,
+      "passed": true
+    },
+    {
+      "category": "Positive",
+      "text": "Things are looking up",
+      "score": 0.9900630904355588,
+      "threshold": 0.7,
+      "passed": true
+    },
+    {
+      "category": "Positive",
+      "text": "I'm optimistic about the future",
+      "score": 0.990675920747751,
+      "threshold": 0.75,
+      "passed": true
+    },
+    {
+      "category": "Positive",
+      "text": "I'm happy with my progress",
+      "score": 0.35945182336313275,
+      "threshold": 0.7,
+      "passed": false
+    },
+    {
+      "category": "Euphoric",
+      "text": "Life is amazing!",
+      "score": 0.9778182553824099,
+      "threshold": 0.85,
+      "passed": true
+    },
+    {
+      "category": "Euphoric",
+      "text": "Everything is absolutely amazing!",
+      "score": 0.9925469063853528,
+      "threshold": 0.9,
+      "passed": true
+    },
+    {
+      "category": "Euphoric",
+      "text": "I'm on top of the world!",
+      "score": 0.9994412909007028,
+      "threshold": 0.85,
+      "passed": true
+    },
+    {
+      "category": "Euphoric",
+      "text": "Life couldn't be better!",
+      "score": 0.9920137176340128,
+      "threshold": 0.9,
+      "passed": true
+    }
+  ]
+}

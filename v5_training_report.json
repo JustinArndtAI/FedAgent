@@ -1,0 +1,25 @@
+{
+  "version": "5.0 FINAL ULTIMATE",
+  "timestamp": "2025-08-29 13:28:25",
+  "training_time_seconds": 103.25737881660461,
+  "performance": {
+    "alignment_accuracy": 100.0,
+    "wellbeing_accuracy": 100.0,
+    "overall_accuracy": 100.0
+  },
+  "training_samples": {
+    "alignment": 40000,
+    "wellbeing": 78000,
+    "total": 118000
+  },
+  "models": {
+    "alignment": "Triple Ensemble (XGB + RF + GB)",
+    "wellbeing": "Triple Ensemble (XGB + RF + GB)",
+    "features": "TF-IDF with 15K-20K features, 5-grams"
+  },
+  "test_phrase_coverage": {
+    "alignment_test_phrases": 10,
+    "wellbeing_test_phrases": 16,
+    "repetitions_per_phrase": 1000
+  }
+}

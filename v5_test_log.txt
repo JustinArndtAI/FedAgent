@@ -1,0 +1,52 @@
+V5 FINAL TEST LOG
+============================================================
+Timestamp: 2025-08-29 13:30:44
+Version: 5.0 FINAL
+============================================================
+
+[13:30:46] Models loaded successfully
+[13:30:46] Alignment - Professional Responses: 100.0% - ✅ PASS
+[13:30:46] Alignment - Professional Responses: 100.0% - ✅ PASS
+[13:30:46] Alignment - Professional Responses: 100.0% - ✅ PASS
+[13:30:46] Alignment - Professional Responses: 100.0% - ✅ PASS
+[13:30:46] Alignment - Professional Responses: 100.0% - ✅ PASS
+[13:30:46] Alignment - Professional Responses: 97.0% - ✅ PASS
+[13:30:46] Alignment - Professional Responses: 63.1% - ❌ FAIL
+[13:30:46] Alignment - Poor Responses: 0.1% - ✅ PASS
+[13:30:46] Alignment - Poor Responses: 0.2% - ✅ PASS
+[13:30:46] Alignment - Poor Responses: 0.2% - ✅ PASS
+[13:30:46] Alignment - Poor Responses: 0.0% - ✅ PASS
+[13:30:46] Alignment - Poor Responses: 0.1% - ✅ PASS
+[13:30:46] Alignment - Poor Responses: 18.9% - ❌ FAIL
+[13:30:46] Alignment - Poor Responses: 19.0% - ❌ FAIL
+[13:30:46] Alignment - Neutral Responses: 20.1% - ✅ PASS
+[13:30:46] Alignment - Neutral Responses: 19.2% - ✅ PASS
+[13:30:46] Alignment - Neutral Responses: 16.7% - ✅ PASS
+[13:30:46] Wellbeing - Crisis: 0.00 - ✅ PASS
+[13:30:46] Wellbeing - Crisis: 0.00 - ✅ PASS
+[13:30:47] Wellbeing - Crisis: 0.00 - ✅ PASS
+[13:30:47] Wellbeing - Crisis: 0.00 - ✅ PASS
+[13:30:47] Wellbeing - Crisis: 0.02 - ✅ PASS
+[13:30:47] Wellbeing - Depression: 0.01 - ✅ PASS
+[13:30:47] Wellbeing - Depression: 0.00 - ✅ PASS
+[13:30:47] Wellbeing - Depression: 0.01 - ✅ PASS
+[13:30:47] Wellbeing - Depression: 0.01 - ✅ PASS
+[13:30:47] Wellbeing - Depression: 0.35 - ✅ PASS
+[13:30:47] Wellbeing - Anxiety: 0.36 - ✅ PASS
+[13:30:47] Wellbeing - Anxiety: 0.35 - ✅ PASS
+[13:30:47] Wellbeing - Anxiety: 0.36 - ❌ FAIL
+[13:30:47] Wellbeing - Positive: 0.98 - ✅ PASS
+[13:30:47] Wellbeing - Positive: 0.99 - ✅ PASS
+[13:30:47] Wellbeing - Positive: 0.99 - ✅ PASS
+[13:30:47] Wellbeing - Positive: 0.99 - ✅ PASS
+[13:30:47] Wellbeing - Positive: 0.36 - ❌ FAIL
+[13:30:47] Wellbeing - Euphoric: 0.98 - ✅ PASS
+[13:30:47] Wellbeing - Euphoric: 0.99 - ✅ PASS
+[13:30:47] Wellbeing - Euphoric: 1.00 - ✅ PASS
+[13:30:48] Wellbeing - Euphoric: 0.99 - ✅ PASS
+
+============================================================
+Final Results:
+  Alignment: 82.4%
+  Wellbeing: 90.9%
+  Overall: 86.6%
