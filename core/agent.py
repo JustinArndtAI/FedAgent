@@ -42,6 +42,8 @@ class Agent:
     
     def therapy_node(self, state: AgentState) -> Dict[str, Any]:
         input_text = state["input"]
+        if not input_text:
+            input_text = ""
         therapy_response = f"I hear you saying: {input_text}. Let me provide empathetic support."
         
         if "sad" in input_text.lower() or "depressed" in input_text.lower():
@@ -99,8 +101,9 @@ class Agent:
     
     def update_from_fed(self, encrypted_grads):
         logger.info("Updated from federation with encrypted gradients")
-        if self.fed_model:
+        if self.fed_model and hasattr(self.fed_model, 'apply_gradients'):
             self.fed_model.apply_gradients(encrypted_grads)
+        # For now, just log the update since apply_gradients is not implemented
     
     def set_alignment_module(self, module):
         self.alignment_module = module

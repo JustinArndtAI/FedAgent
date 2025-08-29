@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.edgefedalign_envScriptsactivate)",
+      "Bash(pip install:*)",
+      "Bash(edgefedalign_envScriptsactivate.bat)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

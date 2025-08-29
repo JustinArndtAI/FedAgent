@@ -1,8 +1,9 @@
 import torch
 import torch.quantization as quantization
-from federated.fed_learn import SimpleNet
 import sys
 import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from federated.fed_learn import SimpleNet
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -97,6 +98,9 @@ def prepare_edge_model():
 
 
 if __name__ == "__main__":
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    
     print("=" * 60)
     print("Edge Deployment - Model Quantization")
     print("=" * 60)

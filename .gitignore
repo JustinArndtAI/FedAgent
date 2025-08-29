@@ -78,6 +78,10 @@ checkpoints/
 # Data files
 data/
 *.csv
-*.json
 *.db
 *.sqlite
+
+# Allow test results
+!test_results.json
+!report.txt
+!test_log.txt

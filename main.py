@@ -10,6 +10,8 @@ logger = logging.getLogger(__name__)
 
 
 def main():
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
     print("=" * 60)
     print("EdgeFedAlign MVP - Privacy-First AI Therapy Agent")
     print("=" * 60)
