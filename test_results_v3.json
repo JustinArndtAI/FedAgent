@@ -1,0 +1,126 @@
+{
+  "version": "3.0",
+  "timestamp": "2025-08-29 11:20:07",
+  "models": {
+    "alignment": {
+      "model": "XGBoost",
+      "features": 2000,
+      "ngrams": "(1,2,3)",
+      "estimators": 300,
+      "target_accuracy": 95,
+      "version": "3.0"
+    },
+    "wellbeing": {
+      "model": "Ensemble (GradientBoosting + RandomForest)",
+      "features": "BERT embeddings or TF-IDF(3000) + VADER",
+      "target_accuracy": 98,
+      "version": "3.0"
+    }
+  },
+  "performance": {
+    "alignment_accuracy": 66.66666666666666,
+    "wellbeing_accuracy": 80.0,
+    "avg_alignment_time_ms": 1.7487208048502605,
+    "avg_wellbeing_time_ms": 30.977678298950195,
+    "initialization_time_s": 32.40557599067688
+  },
+  "test_results": {
+    "alignment": [
+      {
+        "text": "I understand you're going through a difficult time...",
+        "expected": "Professional",
+        "score": 53.960426330566406,
+        "feedback": "\u274c POOR: Significant alignment issues",
+        "time_ms": 3.4942626953125
+      },
+      {
+        "text": "Thank you for trusting me with this. Let's explore...",
+        "expected": "Professional",
+        "score": 95.84900779724121,
+        "feedback": "\ud83c\udf1f EXCEPTIONAL: World-class therapeutic alignment!",
+        "time_ms": 1.9996166229248047
+      },
+      {
+        "text": "I hear the pain in your words, and I want to ackno...",
+        "expected": "Professional",
+        "score": 96.81026306152344,
+        "feedback": "\ud83c\udf1f EXCEPTIONAL: World-class therapeutic alignment!",
+        "time_ms": 0.9996891021728516
+      },
+      {
+        "text": "Just get over it already....",
+        "expected": "Poor",
+        "score": 25.496118545532227,
+        "feedback": "\u274c POOR: Significant alignment issues",
+        "time_ms": 0.9999275207519531
+      },
+      {
+        "text": "That's not a real problem....",
+        "expected": "Poor",
+        "score": 41.3914794921875,
+        "feedback": "\u274c POOR: Significant alignment issues",
+        "time_ms": 1.9998550415039062
+      },
+      {
+        "text": "I see. Thank you for sharing....",
+        "expected": "Neutral",
+        "score": 68.2457504272461,
+        "feedback": "\u26a0\ufe0f MODERATE: Room for improvement",
+        "time_ms": 0.9989738464355469
+      }
+    ],
+    "wellbeing": [
+      {
+        "text": "I'm absolutely thrilled with life! Everything is a...",
+        "expected": "Euphoric",
+        "score": 0.8663634037123062,
+        "alarm": false,
+        "level": "normal",
+        "confidence": 0.0,
+        "time_ms": 44.62456703186035
+      },
+      {
+        "text": "I'm feeling pretty good today, things are looking ...",
+        "expected": "Positive",
+        "score": 0.5895028475829716,
+        "alarm": false,
+        "level": "normal",
+        "confidence": 0.0,
+        "time_ms": 31.037569046020508
+      },
+      {
+        "text": "Today is just another day, nothing special....",
+        "expected": "Neutral",
+        "score": -0.46288633800680423,
+        "alarm": true,
+        "level": "warning",
+        "confidence": 0.9,
+        "time_ms": 29.855012893676758
+      },
+      {
+        "text": "I'm so depressed I can't function anymore....",
+        "expected": "Depression",
+        "score": -0.5471300320319992,
+        "alarm": true,
+        "level": "warning",
+        "confidence": 0.9,
+        "time_ms": 25.43926239013672
+      },
+      {
+        "text": "I want to end my life, I can't go on....",
+        "expected": "Crisis",
+        "score": -0.8,
+        "alarm": true,
+        "level": "severe",
+        "confidence": 0.95,
+        "time_ms": 23.93198013305664
+      }
+    ]
+  },
+  "targets": {
+    "alignment_target": 95,
+    "wellbeing_target": 98,
+    "alignment_achieved": false,
+    "wellbeing_achieved": false
+  }
+}
