@@ -1,0 +1,11 @@
+{
+  "version": "V6 PRODUCTION",
+  "timestamp": "2025-08-29 14:09:44",
+  "training_time_seconds": 58.86142826080322,
+  "samples_trained": 500,
+  "architecture": "XGBoost meta-learner with DistilBERT",
+  "expected_performance": {
+    "alignment": "96-98%",
+    "wellbeing": "92-95%"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": "V6 PRODUCTION",
+  "architecture": "V4 + DistilBERT meta-learning",
+  "distilbert_dims": 50,
+  "meta_features": 52,
+  "base_model": "V4 (93% accuracy)",
+  "device": "cpu"
+}
