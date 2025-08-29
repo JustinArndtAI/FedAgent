@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "timestamp": "2025-08-29T10:52:15.708839",
+  "tests": {
+    "initialization": "PASSED"
+  },
+  "metrics": {
+    "avg_alignment": 66.45866182854027,
+    "avg_wellbeing": 0.0839042990540084,
+    "avg_response_time": 0.7667809963226319,
+    "alignment_accuracy": 89.45866182854027,
+    "wellbeing_accuracy": 83.25469779314207,
+    "crisis_detection_accuracy": 20.0
+  },
+  "improvements": {
+    "alignment": 8.948625948426676,
+    "wellbeing": 24.81963687127746,
+    "speed": -7567.809963226318
+  },
+  "performance": {
+    "total_tests": 10,
+    "targets_met": false
+  }
+}

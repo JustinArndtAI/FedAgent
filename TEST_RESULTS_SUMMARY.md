@@ -156,7 +156,40 @@ The system is ready for demonstration to stakeholders and initial user testing. 
 
 ---
 
+## V2 Update - Enhanced ML Models
+
+### V2 Test Results (2025-08-29)
+
+#### Performance Metrics
+| Metric | V1 | V2 | Improvement | Target | Status |
+|--------|-----|-----|------------|--------|--------|
+| Alignment Score | 61.0% | 66.5% | +8.9% | 85% | ⚠️ Below Target |
+| Wellbeing Accuracy | 66.7% | 83.3% | +24.8% | 90% | ⚠️ Close to Target |
+| Crisis Detection | 66.7% | 20.0% | -70.0% | 90% | ❌ Needs Work |
+| Response Time | 10ms | 767ms | -7567% | <1000ms | ✅ Within Limit |
+| Model Accuracy (Align) | N/A | 89.5% | New | 85% | ✅ Exceeds Target |
+
+#### V2 Enhancements
+- **Alignment Model**: RandomForest + TF-IDF (500 features, bi-grams)
+- **Wellbeing Model**: RandomForest + VADER Hybrid (300 features)
+- **Training Data**: 2000 alignment samples, 1000 wellbeing samples
+- **New Features**: Contextual analysis, trend tracking, severity levels
+
+#### Key Improvements from V1
+- ✅ **+24.8% Wellbeing Accuracy** - Significant improvement
+- ✅ **+8.9% Alignment Score** - Positive trend
+- ✅ **89.5% Model Accuracy** - Strong ML performance
+- ⚠️ **Crisis Detection** - Requires additional tuning
+
+#### Next Steps for V3
+1. Fine-tune crisis detection thresholds
+2. Increase training data diversity
+3. Implement ensemble voting for alignment
+4. Add transformer-based models for better context understanding
+
+---
+
 **Test Executed By:** Automated Test Suite  
 **Date:** 2025-08-29  
-**Version:** MVP 1.0  
+**Version:** V2.0 with ML Enhancements  
 **Repository:** https://github.com/JustinArndtAI/FedAgent
